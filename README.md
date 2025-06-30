@@ -184,3 +184,6 @@ The application uses Neon with PostgreSQL with the following main tables:
 - Firefox 88+
 - Safari 14+
 - Edge 90+
+
+**This project is a part of a hackathon run by 
+https://www.katomaran.com **
