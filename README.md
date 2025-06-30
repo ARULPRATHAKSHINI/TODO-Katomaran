@@ -1,5 +1,7 @@
 # TaskMasterPro
 
+**DEMO VIDEO** - https://drive.google.com/file/d/1NiNuVkYOfIIxF4WkecLr1bbGygFkoEqd/view?usp=sharing
+
 A comprehensive task management application built with modern web technologies, featuring real-time collaboration, Google OAuth authentication, and advanced analytics.
 
 ## Features
@@ -54,7 +56,7 @@ A comprehensive task management application built with modern web technologies, 
 
 3. **Set up environment variables**
    ```bash
-   cp .env.example .env
+   touch .env
    ```
    Fill in your environment variables in the `.env` file.
 
@@ -82,7 +84,7 @@ The application will be available at `http://localhost:5000`
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `DATABASE_URL` | PostgreSQL connection string | Yes |
+| `DATABASE_URL` | Neon | Yes |
 | `GOOGLE_CLIENT_ID` | Google OAuth Client ID | Yes |
 | `GOOGLE_CLIENT_SECRET` | Google OAuth Client Secret | Yes |
 | `SESSION_SECRET` | Secret key for session encryption | Yes |
@@ -91,7 +93,7 @@ The application will be available at `http://localhost:5000`
 
 ## Database Schema
 
-The application uses PostgreSQL with the following main tables:
+The application uses Neon with PostgreSQL with the following main tables:
 
 - **users**: Store user profiles from Google OAuth
 - **tasks**: Core task entities with status, priority, due dates
@@ -152,13 +154,6 @@ The application uses PostgreSQL with the following main tables:
 - `npm run db:push` - Push database schema changes
 - `npm run db:studio` - Open Drizzle Studio
 
-### Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
 
 ## Deployment
 
@@ -189,11 +184,3 @@ The application uses PostgreSQL with the following main tables:
 - Firefox 88+
 - Safari 14+
 - Edge 90+
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, please open an issue on GitHub or contact the development team.
